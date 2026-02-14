@@ -1,3 +1,7 @@
+# DeepTrace-Lite
+# © 2026 Muneeza-Khan
+# All Rights Reserved
+
 import streamlit as st
 import pandas as pd
 from frame_analysis import analyze_video_frames
@@ -75,3 +79,4 @@ if uploaded_file:
 
         st.markdown(f"<p style='font-weight:bold'>{row['Risk Type']}: {label}</p>", unsafe_allow_html=True)
         st.progress(row['Score']/100)
+
